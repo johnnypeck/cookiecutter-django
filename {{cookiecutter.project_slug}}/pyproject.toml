@@ -137,6 +137,10 @@ ignore_errors = true
 [tool.django-stubs]
 django_settings_module = "config.settings.test"
 
+[tool.pyright]
+# Pylance is not needed for types and reports too many errors.
+typeCheckingMode = "off"
+
 # ==== djLint ====
 
 [tool.djlint]
